@@ -18,10 +18,17 @@ namespace Task10._2
             myList.AddElement(50);
             myList.AddElement(60);
             myList.AddElement(70);
-
-
             Console.WriteLine(myList[2]);
             Console.WriteLine(myList.NumberOfElements);
+
+            foreach (var element in myList.GetArray())
+            {
+                Console.Write(element);
+                Console.Write(" ");
+            }
+            
+            
+
             Console.ReadLine();
         }
     }
